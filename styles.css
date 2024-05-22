@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+   
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('pexels-rostislav-10458835.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+   
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+}
+
+.top-bar {
+    height: 7%;
+    width: 100%;
+    border-bottom: 0px solid black;
+}
+
+.main-content {
+    display: flex;
+    flex: 0;
+    border-top: 0px solid black;
+}
+
+.left-section {
+    flex: 0;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-right: 1%;
+    background-image: url('pexels-rostislav-10458835.jpg');
+    border: 4px;
+}
+
+.right-section {
+    flex: 2%;
+    border: 0px solid black;
+    border-top: none;
+    margin-right: 1%;
+}
+
+
+video {
+    border: 3px solid #43d0e2;
+    border-radius: 8px;
+
+}
+
+img {
+    border: 2px solid #43d0e2;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #e6fa30;
+    border: 2px;
+  }
+
+  p{
+    color: aliceblue;
+  }
+
+/* Estilos para TVs grandes */
+@media (min-width: 1920px) {
+    body {
+      padding: 100px;
+    }
+
+}
+
+
+.ticker-container {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ticker {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 17s linear infinite;
+  }
+  
+  .ticker p {
+    display: inline;
+    padding: 0 2rem;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
